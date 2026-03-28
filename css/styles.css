@@ -17,9 +17,9 @@
   --color-muted:       rgba(255, 255, 255, 0.50);
   --color-subtle:      rgba(255, 255, 255, 0.25);
 
-  --color-saffron:     #FF9933;
-  --color-saffron-dark:#E07A10;
-  --color-saffron-glow:rgba(255, 153, 51, 0.15);
+  --color-accent:      #6C63FF;
+  --color-accent-dark: #5B52E8;
+  --color-accent-glow: rgba(108, 99, 255, 0.15);
 
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
@@ -28,7 +28,7 @@
   --radius-lg:  10px;
 
   --shadow-card: 0 0 0 1px var(--color-border), 0 4px 24px rgba(0,0,0,.6);
-  --shadow-glow: 0 0 30px rgba(255, 153, 51, 0.12);
+  --shadow-glow: 0 0 30px rgba(108, 99, 255, 0.12);
 
   --transition: 0.18s ease;
 
@@ -79,7 +79,7 @@ ul { list-style: none; }
   top: -100%;
   left: 1rem;
   padding: 0.5rem 1rem;
-  background: var(--color-saffron);
+  background: var(--color-accent);
   color: var(--color-black);
   font-weight: 700;
   border-radius: var(--radius-sm);
@@ -131,7 +131,7 @@ ul { list-style: none; }
 }
 
 .header__logo span {
-  color: var(--color-saffron);
+  color: var(--color-accent);
 }
 
 .header__nav {
@@ -158,14 +158,14 @@ ul { list-style: none; }
 
 .header__cta {
   color: var(--color-black) !important;
-  background-color: var(--color-saffron) !important;
+  background-color: var(--color-accent) !important;
   font-weight: 700 !important;
   border-radius: var(--radius-sm) !important;
   transition: background-color var(--transition), box-shadow var(--transition) !important;
 }
 
 .header__cta:hover {
-  background-color: var(--color-saffron-dark) !important;
+  background-color: var(--color-accent-dark) !important;
   box-shadow: var(--shadow-glow) !important;
 }
 
@@ -187,13 +187,13 @@ ul { list-style: none; }
 }
 
 .btn--primary {
-  background-color: var(--color-saffron);
+  background-color: var(--color-accent);
   color: var(--color-black);
 }
 
 .btn--primary:hover {
-  background-color: var(--color-saffron-dark);
-  box-shadow: 0 0 24px rgba(255, 153, 51, 0.3);
+  background-color: var(--color-accent-dark);
+  box-shadow: 0 0 24px rgba(108, 99, 255, 0.3);
   transform: translateY(-1px);
 }
 
@@ -227,7 +227,7 @@ ul { list-style: none; }
   content: '';
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(rgba(255, 153, 51, 0.18) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(108, 99, 255, 0.18) 1px, transparent 1px);
   background-size: 28px 28px;
   mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
   -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
@@ -243,7 +243,7 @@ ul { list-style: none; }
   transform: translateX(-50%);
   width: 600px;
   height: 300px;
-  background: radial-gradient(ellipse, rgba(255, 153, 51, 0.07) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(108, 99, 255, 0.07) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -260,12 +260,12 @@ ul { list-style: none; }
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--color-saffron);
+  color: var(--color-accent);
   margin-bottom: 1.5rem;
   padding: 0.35rem 0.85rem;
-  border: 1px solid rgba(255, 153, 51, 0.25);
+  border: 1px solid rgba(108, 99, 255, 0.25);
   border-radius: var(--radius-sm);
-  background: rgba(255, 153, 51, 0.05);
+  background: rgba(108, 99, 255, 0.05);
 }
 
 .hero__title {
@@ -279,7 +279,7 @@ ul { list-style: none; }
 
 .hero__title em {
   font-style: normal;
-  color: var(--color-saffron);
+  color: var(--color-accent);
 }
 
 .hero__subtitle {
@@ -321,7 +321,7 @@ ul { list-style: none; }
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--color-saffron);
+  color: var(--color-accent);
   margin-bottom: 1rem;
 }
 
@@ -427,7 +427,7 @@ ul { list-style: none; }
   gap: 0.5rem;
   font-size: 1rem;
   font-weight: 600;
-  color: var(--color-saffron);
+  color: var(--color-accent);
   letter-spacing: 0.01em;
   border-bottom: 1px solid transparent;
   transition: border-color var(--transition);
@@ -435,7 +435,7 @@ ul { list-style: none; }
 }
 
 .contact__email:hover {
-  border-color: var(--color-saffron);
+  border-color: var(--color-accent);
 }
 
 /* ------------------------------------------------------------
@@ -464,7 +464,7 @@ ul { list-style: none; }
 }
 
 .footer__brand span {
-  color: var(--color-saffron);
+  color: var(--color-accent);
 }
 
 .footer__copy {
@@ -476,7 +476,7 @@ ul { list-style: none; }
    14. Focus styles
    ------------------------------------------------------------ */
 :focus-visible {
-  outline: 1px solid var(--color-saffron);
+  outline: 1px solid var(--color-accent);
   outline-offset: 3px;
   border-radius: var(--radius-sm);
 }
