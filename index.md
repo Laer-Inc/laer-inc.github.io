@@ -32,20 +32,6 @@ description: "Software engineering consulting, digital transformation, and proje
       <p class="about__text">
         Laer Innovation Inc. is a boutique consulting firm specialising in technology-led transformation. We work closely with our clients to understand their unique challenges, then craft precise, scalable solutions that deliver measurable value.
       </p>
-      <div class="about__stats">
-        <div class="stat">
-          <span class="stat__number">10<span>+</span></span>
-          <p class="stat__label">Years of Experience</p>
-        </div>
-        <div class="stat">
-          <span class="stat__number">50<span>+</span></span>
-          <p class="stat__label">Projects Delivered</p>
-        </div>
-        <div class="stat">
-          <span class="stat__number">30<span>+</span></span>
-          <p class="stat__label">Satisfied Clients</p>
-        </div>
-      </div>
     </div>
   </div>
 </section>

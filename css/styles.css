@@ -533,20 +533,29 @@ ul {
    ------------------------------------------------------------ */
 @media (max-width: 768px) {
   :root {
-    --header-height: 60px;
+    --header-height: 56px;
+  }
+
+  .header__logo {
+    font-size: 1rem;
+  }
+
+  /* Hide "Innovation" word on small screens to save space */
+  .header__logo .logo-word {
+    display: none;
   }
 
   .header__nav {
-    gap: 1.25rem;
+    gap: 0.75rem;
   }
 
   .header__nav a {
     font-size: 0.82rem;
   }
 
+  /* Hide the CTA button in the header on mobile — hero already has it */
   .header__cta {
-    padding: 0.4rem 0.9rem !important;
-    font-size: 0.82rem !important;
+    display: none !important;
   }
 
   .hero {
@@ -562,10 +571,6 @@ ul {
     padding: 3.5rem 1.25rem;
   }
 
-  .about__stats {
-    gap: 2rem;
-  }
-
   .services__grid {
     grid-template-columns: 1fr;
   }
@@ -577,15 +582,5 @@ ul {
   .footer__inner {
     flex-direction: column;
     text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .header__logo {
-    font-size: 1rem;
-  }
-
-  .header__nav {
-    gap: 0.9rem;
   }
 }
