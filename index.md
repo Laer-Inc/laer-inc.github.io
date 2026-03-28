@@ -63,7 +63,7 @@ description: "Software engineering consulting, digital transformation, and proje
       <div class="service-card">
         <div class="service-card__icon" aria-hidden="true">🛡️</div>
         <h3 class="service-card__title">Defence Technology Consulting</h3>
-        <p class="service-card__desc">Specialist advisory for defence and national security programmes — from systems architecture and secure software engineering to technology strategy for mission-critical environments.</p>
+        <p class="service-card__desc">Specialist advisory for defence and national security programmes — from systems architecture and secure software engineering to electronic warfare (EW) technology and strategy for mission-critical environments.</p>
       </div>
     </div>
   </div>
