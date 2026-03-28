@@ -3,73 +3,60 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  <meta name="description" content="{{ site.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
-  <!-- Google tag (gtag.js) -->
+
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VPLR0328FN"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-VPLR0328FN');
   </script>
 </head>
 
 <body>
 
-  <!-- Header Section -->
-  <!-- <header class="header">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Sticky Header -->
+  <header class="header" role="banner">
     <div class="container">
-      <h1 class="logo">Laer Innovation Inc.</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header> -->
-
-  <!-- Main Content -->
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Welcome to Laer Innovation Inc.</h1>
-        <p>Your trusted partner in transforming innovative ideas into reality.</p>
-        <a href="#services" class="btn">Explore Our Services</a>
+      <div class="header__inner">
+        <a href="{{ '/' | relative_url }}" class="header__logo" aria-label="Laer Innovation Inc. — Home">
+          Laer <span>Innovation</span>
+        </a>
+        <nav class="header__nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact" class="header__cta">Get in Touch</a>
+        </nav>
       </div>
-    </section>
+    </div>
+  </header>
 
-    <section id="about" class="content-section">
-      <h2>About Us</h2>
-      <p>Laer Innovation Inc. specializes in providing top-notch consulting services, leveraging technology and
-        innovation to drive your business success.</p>
-    </section>
-
-    <section id="services" class="content-section">
-      <h2>Our Services</h2>
-      <ul>
-        <li><strong>Software Engineering Consulting</strong>: Custom solutions tailored to meet your specific needs.
-        </li>
-        <li><strong>Digital Transformation</strong>: Helping businesses adapt and thrive in a digital world.</li>
-        <li><strong>Project Management</strong>: Ensuring project success from conception to execution.</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="content-section">
-      <h2>Contact Us</h2>
-      <p>Email: <a href="mailto:business@laer.in">business@laer.in</a></p>
-    </section>
+  <!-- Page Content -->
+  <main id="main-content">
+    {{ content }}
   </main>
 
-  <!-- Footer Section -->
-  <footer class="footer">
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
     <div class="container">
-      <p>&copy; {{ site.time | date: '%Y' }} Laer Innovation Inc. | All rights reserved.</p>
+      <div class="footer__inner">
+        <p class="footer__brand">Laer <span>Innovation</span> Inc.</p>
+        <p class="footer__copy">&copy; {{ site.time | date: '%Y' }} Laer Innovation Inc. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 

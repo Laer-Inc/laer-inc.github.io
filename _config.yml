@@ -1,4 +1,15 @@
 title: "Laer Innovation Inc."
-description: "Leading the Way in Innovative Consulting"
-baseurl: "" # Leave empty if hosted on root of domain
-url: "https://laer-inc.github.io" # Update with your GitHub Pages URL
+description: "Software engineering consulting, digital transformation, and project management — tailored for modern businesses."
+author: "Laer Innovation Inc."
+lang: "en"
+
+baseurl: ""
+url: "https://laer.in"
+
+# Build
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - "*.gemspec"
+  - vendor/
