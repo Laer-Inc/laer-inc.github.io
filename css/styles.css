@@ -553,12 +553,12 @@ ul {
     font-size: 0.82rem;
   }
 
-  /* Hide the CTA button in the header on mobile — hero already has it */
   .header__cta {
-    display: none !important;
+    padding: 0.4rem 0.9rem !important;
+    font-size: 0.82rem !important;
   }
 
-  .hero {
+.hero {
     padding: 4rem 1.25rem;
   }
 
