@@ -42,7 +42,7 @@ description: "Software engineering consulting, digital transformation, and proje
     <div class="section__header">
       <p class="section__label">What We Do</p>
       <h2 class="section__title">Services Designed for Growth</h2>
-      <p class="section__desc">From strategy to execution, we provide end-to-end consulting across the full technology lifecycle.</p>
+      <p class="section__desc">From commercial software to mission-critical defence environments, we provide end-to-end consulting across the full technology lifecycle.</p>
     </div>
     <div class="services__grid">
       <div class="service-card">
@@ -59,6 +59,11 @@ description: "Software engineering consulting, digital transformation, and proje
         <div class="service-card__icon" aria-hidden="true">📋</div>
         <h3 class="service-card__title">Project Management</h3>
         <p class="service-card__desc">End-to-end project oversight — from scoping and planning through delivery and retrospective — ensuring on-time, on-budget success.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-card__icon" aria-hidden="true">🛡️</div>
+        <h3 class="service-card__title">Defence Technology Consulting</h3>
+        <p class="service-card__desc">Specialist advisory for defence and national security programmes — from systems architecture and secure software engineering to technology strategy for mission-critical environments.</p>
       </div>
     </div>
   </div>
