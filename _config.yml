@@ -8,6 +8,8 @@ url: "https://laer.in"
 
 # Build
 markdown: kramdown
+include:
+  - .well-known
 exclude:
   - Gemfile
   - Gemfile.lock
